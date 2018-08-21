@@ -13,7 +13,7 @@ class ComposerStaticInit55e08eaf98454a195bbad22f64769c27
         ),
         'G' => 
         array (
-            'Gull\\' => 5,
+            'GullAds\\' => 8,
         ),
     );
 
@@ -22,7 +22,7 @@ class ComposerStaticInit55e08eaf98454a195bbad22f64769c27
         array (
             0 => __DIR__ . '/..' . '/pagseguro/pagseguro-php-sdk/source',
         ),
-        'Gull\\' => 
+        'GullAds\\' => 
         array (
             0 => __DIR__ . '/..' . '/gull-ads/php-classes/src',
         ),

@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'PagSeguro\\' => array($vendorDir . '/pagseguro/pagseguro-php-sdk/source'),
-    'Gull\\' => array($vendorDir . '/gull-ads/php-classes/src'),
+    'GullAds\\' => array($vendorDir . '/gull-ads/php-classes/src'),
 );

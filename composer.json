@@ -24,7 +24,7 @@
     },
     "autoload": {
     	"psr-4": {
-    		"Gull\\": "vendor\\gull-ads\\php-classes\\src"
+    		"GullAds\\": "vendor\\gull-ads\\php-classes\\src"
     	}
     }
 
