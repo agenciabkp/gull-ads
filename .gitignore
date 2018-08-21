@@ -1,0 +1,8 @@
+# Folders and Contents #
+########################
+_orig/*
+cache/*.php
+vendor/gull-ads/php-classes/src/Config.php
+info.php
+web.config
+.htaccess

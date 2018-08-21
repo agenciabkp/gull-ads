@@ -1,0 +1,31 @@
+{
+    "name": "Gull Ads",
+    "description": "Plataforma de anúncios",
+    "repositories":[
+        {
+            "type":"package",
+            "package":{
+                "name":"agenciabkp/gull-ads",
+                "version":"master",
+                "source":{
+                    "url":"git://github.com/agenciabkp/gull-ads.git",
+                    "type":"git",
+                    "reference":"master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "slim/slim": "2.0",
+        "rain/raintpl": ">=3.0.0",
+        "phpmailer/phpmailer": "5.2.22",
+        "zurb/foundation": ">=6.4.3",
+        "pagseguro/pagseguro-php-sdk" : "*"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"Gull\\": "vendor\\gull-ads\\php-classes\\src"
+    	}
+    }
+
+}
