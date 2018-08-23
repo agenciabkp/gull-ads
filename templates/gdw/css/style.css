@@ -10,11 +10,18 @@ body{
 	Colors
 	********/
 
-.background-color{ background-color: #1ec0c2; }
+.background-color{ background-color: #1ec0c2; color: #FFF;}
+
 .background-color.red{ background-color: #f13554; }
+
+.background-color.green{ background-color: #2dcaa0; }
+.background-color.green .icon{ color: #1b7c61; }
+
+.background-color.purple{ background-color: #5063F0; }
 
 .color{ color: #1ec0c2; }
 .color.red{	color: #f13554; }
+.color.green{	color: #2dcaa0; }
 
 /* Button */
 
@@ -24,8 +31,14 @@ body{
 .button.hollow{ border-color: #1ec0c2; color: #1ec0c2; }
 .button.hollow:hover{ border-color: #189798; color: #189798; }
 
+.button.hollow.purple{ border-color: #5063F0; color: #5063F0; }
+.button.hollow.purple:hover{ border-color: #3f51c1; color: #3f51c1; }
+
 .button.red{ background-color: #f13554; }
 .button.red:hover{ background-color: #d32e47; }
+
+.button.green{ background-color: #2dcaa0; }
+.button.green:hover{ background-color: #26a883; }
 
 /* Links */
 
@@ -42,6 +55,9 @@ ul, li{
 	padding: 0;
 }
 
+ul.table{ display: table; height: 100%; width: 100% }
+ul.table > li{ display: table-cell; vertical-align: middle; }
+
 h1, h2, h3{
 	font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
@@ -56,6 +72,16 @@ h1{
     line-height: 1em;
 }
 
+h1.section{
+	font-size: 1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-top: 1px solid rgba(255,255,255,.4);
+	padding: 10px 0;
+	color: rgba(255,255,255,.7);
+	cursor: default;
+}
+
 h2{
 	font-size: 2em;
 	margin:20px 0;
@@ -66,6 +92,10 @@ h3{
 	font-size: 1.2em;
 	font-weight: 400;
 	margin:-20px 0 20px 0;
+}
+
+.background-color h2{
+	color: #FFF;
 }
 
 .transition-all {
@@ -87,6 +117,27 @@ h3{
 
 .upper-case{
 	text-transform: uppercase;
+}
+
+.rounded-box{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: rgba(0,0,0,.2);
+	color: #FFF !important;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	line-height: 30px;
+}
+
+.rounded-box:hover{
+	background-color: rgba(0,0,0,.4);
+}
+
+.rounded-box.on{
+	background-color: #FFF;
+	color: #484848 !important;
 }
 
 /***********************
@@ -121,7 +172,6 @@ nav ul li a{
 	******/
 
 header .grid-x{
-	border-bottom: 1px solid rgb(228, 228, 228);
 }
 
 header .logo{
@@ -142,12 +192,31 @@ main{
 main > .grid-x{
 }
 
+main .main-title{
+	max-width: 300px;
+	float: right;
+}
+
+.bg-main-icon{
+	font-size: 300px;
+	color: #F3F2F2;
+}
+
+section .content{
+	max-width: 860px;
+	padding: 40px 0;
+}
+
 /**************
 	Main Search
 	**********/
 
 .main-search > .grid-container{
 	padding: 30px;
+}
+
+.main-search input{
+	min-height: 45px
 }
 
 .main-search input,
@@ -162,6 +231,21 @@ main > .grid-x{
 
 .main-search .button{
     color: #FFF;
+}
+
+.search-input{
+	position: relative;
+	font-size: 24px;
+}
+
+.search-input span{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.search-input input{
+	padding-left: 40px;
 }
 
 .video{
@@ -243,6 +327,19 @@ main > .grid-x{
 	font-size: 40px;
 }
 
+.h-grid-icons .icon{
+	font-size: 55px;
+	padding: 0 40px 0 0;
+}
+
+/**************
+	Filter
+	**********/
+
+.filter{
+	max-width: 300px;
+}
+
 /**************
 	Catalog
 	**********/
@@ -280,6 +377,21 @@ main > .grid-x{
 .catalog-grid > .cell > h3{
 	margin:0;
 }
+
+
+/**************
+	Gallery
+	**********/
+
+.gallery-container .cell{
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+
+/**************
+	Footer
+	**********/
 
 footer{
 	background-color: #f2f2f2;

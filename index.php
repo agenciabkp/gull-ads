@@ -24,6 +24,39 @@ $app->get('/', function() {
 
 });
 
+$app->get('/como-funciona', function() { 
+
+	$page = new GullAds\Page();
+
+	$page->setTpl("como-funciona",array(
+		"q"=>"",
+		"loggeduser"=>""
+	));	
+
+});
+
+$app->get('/catalogo', function() { 
+
+	$page = new GullAds\Page();
+
+	$page->setTpl("catalogo",array(
+		"q"=>"",
+		"loggeduser"=>""
+	));	
+
+});
+
+$app->get('/anuncio/:id/:alias', function($id,$alias) { 
+
+	$page = new GullAds\Page();
+
+	$page->setTpl("anuncio",array(
+		"q"=>"",
+		"loggeduser"=>""
+	));	
+
+});
+
 
 /**
  * Users Logged in Pages

@@ -63,6 +63,14 @@ nav ul > li > a {
 	text-align: center;
 }
 
+/*******
+	Main 
+	****/
+
+.bg-main-icon{
+	font-size: 200px;
+}
+
 /**************
 	Main Search
 	**********/
@@ -84,11 +92,32 @@ nav ul > li > a {
     font-size: 1.2em;
 }
 
-@media only screen and (max-width: 590px){
+/**************
+	Filter
+	**********/
+
+.filter{
+	max-width: 100%;
+}
+
+@media only screen and (max-width: 639px){
 
 	.video .video-headline{
 		width: 100%;
 		padding: 80px 5% 0 5%;
+	}
+
+	main .table{
+		text-align: left;
+	}
+
+	main .main-title{
+		max-width: 100%;
+	}
+
+
+	.bg-main-icon{
+		font-size: 80px;
 	}
 
 }
