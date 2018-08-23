@@ -1,0 +1,94 @@
+
+
+/***********
+	Defaults
+	********/
+h1{
+	font-size: 3.5em;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+h3{
+	font-size: 1em;
+}
+
+/*************
+	Navigation
+	**********/
+
+header{
+	position: relative;
+}
+
+nav ul{
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,.95);
+	display: none;
+}
+
+nav ul.on{
+	display: table;
+}
+
+nav ul > li {
+	display: table-row;
+}
+
+nav ul > li > a {
+	display: table-cell;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 16px;
+}
+
+.nav-icon{
+	display: table;
+	width: 80px;
+	float: right;
+    height: 100%;
+}
+
+.nav-icon > span{
+	font-size: 28px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/**************
+	Main Search
+	**********/
+
+.main-search > .grid-container{
+	border-radius: 0;
+}
+
+.video{
+	height: 300px;
+}
+
+.video .video-headline{
+	padding-top: 120px;
+}
+
+
+.video .video-headline span{
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 590px){
+
+	.video .video-headline{
+		width: 100%;
+		padding: 80px 5% 0 5%;
+	}
+
+}

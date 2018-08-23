@@ -1,0 +1,74 @@
+
+
+/*************
+	Navigation
+	**********/
+
+nav{
+}
+
+nav ul{
+	display: table;
+	height: 100%;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	display: table-cell;
+}
+
+nav ul li a{
+	padding: 0 10px;
+	margin: 0 10px;
+	display: table;
+	height: 100%;
+	border-bottom: 2px solid #FFF;
+}
+
+nav ul li a:hover{
+	color: #1EC0C2;
+	border-bottom: 2px solid #1EC0C2;
+}
+
+nav ul li a > span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*********
+	Main
+	******/
+
+main.grid-container.full{
+	margin-bottom: 100px;	
+}
+
+/**************
+	Main Search
+	**********/
+
+.main-search{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -90px;
+	z-index: 1;
+}
+
+.video{
+	height: 400px;
+}
+
+.video .video-headline{
+	padding-top: 100px;
+}
+
+/*************
+	Navigation
+	**********/
+
+.nav-icon{
+	display: none;
+}
