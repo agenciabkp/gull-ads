@@ -35,6 +35,61 @@ $app->get('/como-funciona', function() {
 
 });
 
+$app->get('/dentista-anuncie-seu-consultorio', function() { 
+
+	$page = new GullAds\Page();
+
+	$page->setTpl("anuncie",array(
+		"q"=>"",
+		"loggeduser"=>""
+	));	
+
+});
+
+$app->get('/termos-e-privacidade', function() { 
+
+	$page = new GullAds\Page();
+
+	$page->setTpl("politica",array(
+		"q"=>"",
+		"loggeduser"=>""
+	));	
+
+});
+
+$app->get('/auth', function() { 
+
+	$page = new GullAds\Page();
+
+	$page->setTpl("autenticacao",array(
+		"q"=>"",
+		"loggeduser"=>""
+	));	
+
+});
+
+$app->get('/quem-somos', function() { 
+
+	$page = new GullAds\Page();
+
+	$page->setTpl("quem-somos",array(
+		"q"=>"",
+		"loggeduser"=>""
+	));	
+
+});
+
+$app->get('/contato', function() { 
+
+	$page = new GullAds\Page();
+
+	$page->setTpl("contato",array(
+		"q"=>"",
+		"loggeduser"=>""
+	));	
+
+});
+
 $app->get('/catalogo', function() { 
 
 	$page = new GullAds\Page();

@@ -14,15 +14,8 @@ body{
 
 .background-color.red{ background-color: #f13554; }
 
-.background-color.gray{ background-color: #EDEDED; color: #484848 !important; }
-
 .background-color.green{ background-color: #2dcaa0; }
-
-.background-color.orange{ background-color: #efa500; }
-
-.background-color.darkred{ background-color: #AF202C; }
-
-.content .icon{ color: rgba(0,0,0,.5); }
+.background-color.green .icon{ color: #1b7c61; }
 
 .background-color.purple{ background-color: #5063F0; }
 
@@ -113,14 +106,7 @@ h3{
 	margin:-20px 0 20px 0;
 }
 
-h4{
-	font-size: 1em;
-	font-weight: 400;
-	margin:0 0 10px 0;
-}
-
-.background-color h2,
-.background-color h3{
+.background-color h2{
 	color: #FFF;
 }
 
@@ -192,31 +178,6 @@ a{
 	font-weight: 500;
 }
 
-.button.margin-min{
-	margin: 0 0 5px 0;
-}
-
-.button.margin-none{
-	margin: 0;
-}
-
-.button.icon{
-	display: table;
-}
-
-.button.icon > span{
-	display: table-cell;
-	vertical-align: middle;	
-}
-
-.button.icon > span:first-of-type{
-	font-size: 24px;
-}
-
-.button.icon > span:last-child{
-	margin-left: 5px;
-}
-
 /*************
 	Navigation
 	**********/
@@ -269,9 +230,6 @@ main .main-title{
 
 section .content{
 	max-width: 860px;
-}
-
-section .content > .grid-x{
 	padding: 40px 0;
 }
 
@@ -442,49 +400,6 @@ section .content > .grid-x{
 	margin:0;
 }
 
-/**************
-	Ad-Page
-	**********/
-
-.profile-image{
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-	overflow: hidden;
-}
-
-.facebook{ background-color: #3C5A99 !important; }
-.twitter{ background-color: #31AAE1 !important; }
-.whatsapp{ background-color: #30B13B !important; }
-
-.ad-page .logo{
-	text-align: center;
-}
-
-.ad-page .logo > img{
-	display: inline-block;
-	max-height: 100px;
-}
-
-.media{
-	margin-top: 10px;
-}
-
-.media >.cell{
-	margin: 2px 0;
-}
-
-.media > .cell > .grid-x > .cell{
-	padding-left: 15px;
-	padding-right: 5px;
-}
-
-.media .grid-x a{
-	color: #484848;
-}
 
 /**************
 	Gallery
@@ -508,7 +423,7 @@ section .content > .grid-x{
 	line-height: 40px;
 }
 
-.gallery-container a.right{
+.gallery-container a:last-child{
 	left: inherit;
 	right: 20px;
 }
@@ -517,18 +432,14 @@ section .content > .grid-x{
 	padding: 0 2px;
 }
 
-.map{
-	display: none;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 2;
-}
-
-.map.on{
-	display: block;
+.profile-image{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	overflow: hidden;
 }
 
 
