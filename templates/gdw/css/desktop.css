@@ -76,3 +76,11 @@ main.grid-container.full{
 .nav-icon{
 	display: none;
 }
+
+/**************
+	Central
+	**********/
+
+.flaps a.button > span:first-of-type{
+	display: none;
+}

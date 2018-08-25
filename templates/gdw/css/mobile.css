@@ -1,5 +1,4 @@
 
-
 /***********
 	Defaults
 	********/
@@ -98,6 +97,27 @@ nav ul > li > a {
 
 .filter{
 	max-width: 100%;
+}
+
+/**************
+	Cart
+	**********/
+
+.cart-progress h4{
+	display: none;
+}
+
+/**************
+	Ad Center
+	**********/
+
+.flaps a.button > span:last-of-type{
+	display: none;
+}
+
+.ad-center .fixed-width{
+	width: auto;
+	line-height: normal;
 }
 
 @media only screen and (max-width: 639px){

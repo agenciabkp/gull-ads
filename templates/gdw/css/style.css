@@ -3,7 +3,7 @@ body{
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 /***********
@@ -22,14 +22,16 @@ body{
 
 .background-color.darkred{ background-color: #AF202C; }
 
-.content .icon{ color: rgba(0,0,0,.5); }
-
 .background-color.purple{ background-color: #5063F0; }
 
 .color { color: #1ec0c2 !important; }
 .color.red{	color: #f13554 !important; }
 .color.green{	color: #2dcaa0 !important; }
 .color.gray{	color: #999 !important; }
+.color.purple{	color: #5063F0 !important; }
+.color.orange{	color: #efa500 !important; }
+.color.white{	color: #FFF !important; }
+.color.overlay{ color: rgba(0,0,0,.5) !important; }
 
 /* Button */
 
@@ -44,6 +46,15 @@ body{
 
 .button.red{ background-color: #f13554; }
 .button.red:hover{ background-color: #d32e47; }
+
+.button.orange{ background-color: #efa500; }
+.button.orange:hover{ background-color: #c98900; }
+
+.button.white{ background-color: #FFF; color: #484848; }
+.button.white:hover{ background-color: #FFF; color: #484848; }
+
+.button.overlay{ background-color: rgba(0,0,0,.5); color: rgba(255,255,255,.5); }
+.button.overlay:hover{ background-color: rgba(0,0,0,.5); color: #FFF; }
 
 .button.green{ background-color: #2dcaa0; }
 .button.green:hover{ background-color: #26a883; }
@@ -180,6 +191,25 @@ h4{
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
 }
 
+.small-text{
+	font-size: 12px;
+}
+
+.small-text > span{
+	font-size: 14px;
+}
+
+/***********
+	Forms
+	********/
+
+[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea, select{
+    color: #484848;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
 /***********************
 	Foundation Overrides
 	*******************/
@@ -216,6 +246,16 @@ a{
 .button.icon > span:last-child{
 	margin-left: 5px;
 }
+
+/***********
+	Icons
+	********/
+
+.icon-large{
+	font-size: 55px;
+}
+
+.icon-overlay{ color: rgba(0,0,0,.5); }
 
 /*************
 	Navigation
@@ -391,11 +431,6 @@ section .content > .grid-x{
 	font-size: 40px;
 }
 
-.h-grid-icons .icon{
-	font-size: 55px;
-	padding: 0 40px 0 0;
-}
-
 /**************
 	Filter
 	**********/
@@ -531,6 +566,58 @@ section .content > .grid-x{
 	display: block;
 }
 
+/**************
+	Cart
+	**********/
+
+.cart-progress{
+	margin: 0 auto;
+	text-align: center;
+	cursor: default;
+}
+
+.cart-progress span{
+	font-size: 40px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+/**************
+	Ad Center
+	**********/
+
+.flaps a.button{
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.flaps > .cell{
+	margin: 0 1px;
+}
+
+.ad-center-logo{
+	height: 400px;
+    position: relative;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 2px dashed #C8CBCE;
+    overflow: hidden;
+}
+
+.ad-center-alert{
+	display: block;
+	margin-bottom: 10px;
+	margin-top: -10px;
+}
+
+.ad-center .fixed-width{
+	width: 115px;
+	line-height: 15px;
+}
 
 /**************
 	Footer
